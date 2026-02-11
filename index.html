@@ -4,12 +4,61 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<script src="script.js" defer></script>
 	<title>Lesson17</title>
 </head>
 
 <body>
-	<div></div>
+	<div class="container">
+		<h2 class="title">Все профессии важны!</h2>
+		<form action="#" class="form">
+			<div class="wrapper">
+				<label for="name">Имя</label>
+				<input id="name" type="text" placeholder="введите имя" required>
+			</div>
+			<div class="wrapper">
+				<label for="age">Ваш возраст</label>
+				<input id="age" type="number" min="1" required>
+			</div>
+			<div class="wrapper">
+				<label for="city">Ваш город</label>
+				<input id="city" type="text" placeholder="введите город" required>
+			</div>
+			<div class="wrapper">
+				<label for="married">Вы женаты/замужем?</label>
+				<input id="married" type="checkbox">
+			</div>
+			<div class="wrapper">
+				<label for="salary">Ваша зарплата</label>
+				<input id="salary" type="number" min="0" step="1000" required>
+				<label for="salary"> руб</label>
+			</div>
+			<div class="wrapper">
+				<label for="prof">Выберите профессию</label>
+				<select name="prof" id="prof">
+					<option value="1">Водитель</option>
+					<option value="2">Разработчик</option>
+				</select>
+			</div>
+			<div class="wrapper">
+				<input type="submit" value="Заполнить поля таблицы">
+			</div>
+	</div>
+
+	</form>
+	<div class="table">
+		<!-- <div class="table-cell name"></div>
+		<div class="table-cell age"></div>
+		<div class="table-cell city"></div>
+		<div class="table-cell married"></div>
+		<div class="table-cell salary"></div>
+		<div class="table-cell skills"></div>
+		<div class="table-cell" id="deleteCell">
+			<button class="delete">Очистить всё</button>
+		</div> -->
+	</div>
+	</div>
 </body>
 
 </html>
